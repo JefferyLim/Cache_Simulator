@@ -1,0 +1,53 @@
+
+-------------------------------------------------------------------------
+      sjeng.All-2way       Simulation Results
+-------------------------------------------------------------------------
+
+  Memory system: 
+    Dcache size = 8192 : ways = 2 : block size = 32 
+    Icache size = 8192 : ways = 2 : block size = 32 
+    L2-cache size = 32768 : ways = 2 : block size = 64 
+    Memory ready time = 50 : chunksize = 8 : chunktime = 15 
+
+  Execute time =    95029042658;  Total refs = 17300001933
+  Inst refs = 12741056222;  Data refs = 4558945711
+
+  Number of reference types:  [Percentage]
+    Reads  =  3299993836    [19.1%]
+    Writes =  1258951875    [ 7.3%]
+    Inst.  = 12741056222    [73.6%]
+    Total  = 17300001933
+ 
+  Total cycles for activities:  [Percentage]
+    Reads  = 20486721843    [21.6%]
+    Writes = 13316370331    [14.0%]
+    Inst.  = 61225950484    [64.4%]
+    Total  = 95029042658
+ 
+  CPI = 7.5
+  Ideal: Exec. Time = 30041058155; CPI =  2.4
+  Ideal mis-aligned: Exec. Time = 40161444400; CPI =  3.2
+
+  Memory Level:  L1i
+    Hit Count = 21334634694  Miss Count = 380922410
+    Total Requests = 21715557104
+    Hit Rate = 98.2%   Miss Rate =  1.8%
+    Kickouts = 358005322; Dirty kickouts = 0; Transfers = 358005586
+    VC Hit count = 22916824
+
+  Memory Level:  L1d
+    Hit Count = 5498545462  Miss Count = 206285612
+    Total Requests = 5704831074
+    Hit Rate = 96.4%   Miss Rate = 3.6%
+    Kickouts = 175673830; Dirty kickouts = 83889252; Transfers = 175674094
+    VC Hit count = 30611518
+
+  Memory Level:  L2
+    Hit Count = 450372832  Miss Count = 167196100
+    Total Requests = 617568932
+    Hit Rate = 72.9%   Miss Rate = 27.1%
+    Kickouts = 156243019; Dirty kickouts = 39959234; Transfers = 156243539
+    VC Hit count = 10952561
+
+  L1 cache cost (Icache $400) + (Dcache $400) = $800
+  L2 cache cost = $200;  Memory cost = $75  Total cost = $1075

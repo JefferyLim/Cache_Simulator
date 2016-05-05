@@ -1,0 +1,23 @@
+I. Introduction
+	A. State objective
+
+II. Project Development
+	A. Discuss important programming choices?
+	B. Anything else pertinent to subject
+
+III. Results
+	A. Graphs (and related discussion) of performance for simulation results
+		1. Execution Times of production traces for the 9 configurations
+		2. CPI of the production traces for the 9 configurations
+		5. Cost for all configurations //each traces have same costs
+		
+		3. mem_chunksize graph of performance vs. cost --> NOTE TO TAY: ADD 8 BYTES TO DATA
+			a. at least one paragraph describing best main memory system model
+			b. discuss effects of main memory system bandwith on overall system performance
+		4. CPI vs. Cost?
+		6. VC Hit Counts of all traces & configurations
+			a. Figure out and discuss significance
+	B. Temporal/Spectral locality? Find and destroy topic
+
+IV. Conclusion
+	A. Some stuff about what was learned

@@ -1,0 +1,53 @@
+
+-------------------------------------------------------------------------
+      astar.L1-8way       Simulation Results
+-------------------------------------------------------------------------
+
+  Memory system: 
+    Dcache size = 8192 : ways = 8 : block size = 32 
+    Icache size = 8192 : ways = 8 : block size = 32 
+    L2-cache size = 32768 : ways = 1 : block size = 64 
+    Memory ready time = 50 : chunksize = 8 : chunktime = 15 
+
+  Execute time =    72063482373;  Total refs = 10000000882
+  Inst refs = 6792328181;  Data refs = 3207672701
+
+  Number of reference types:  [Percentage]
+    Reads  =  2570967807    [25.7%]
+    Writes =   636704894    [ 6.4%]
+    Inst.  =  6792328181    [67.9%]
+    Total  = 10000000882
+ 
+  Total cycles for activities:  [Percentage]
+    Reads  = 35759677909    [49.6%]
+    Writes = 18205725889    [25.3%]
+    Inst.  = 18098078575    [25.1%]
+    Total  = 72063482373
+ 
+  CPI = 10.6
+  Ideal: Exec. Time = 16792329063; CPI =  2.5
+  Ideal mis-aligned: Exec. Time = 22633347554; CPI =  3.3
+
+  Memory Level:  L1i
+    Hit Count = 11304476062  Miss Count = 31043
+    Total Requests = 11304507105
+    Hit Rate = 100.0%   Miss Rate =  0.0%
+    Kickouts = 5788; Dirty kickouts = 0; Transfers = 6052
+    VC Hit count = 24991
+
+  Memory Level:  L1d
+    Hit Count = 4338980044  Miss Count = 197532224
+    Total Requests = 4536512268
+    Hit Rate = 95.6%   Miss Rate = 4.4%
+    Kickouts = 192466167; Dirty kickouts = 82337101; Transfers = 192466431
+    VC Hit count = 5065793
+
+  Memory Level:  L2
+    Hit Count = 119032564  Miss Count = 155777020
+    Total Requests = 274809584
+    Hit Rate = 43.3%   Miss Rate = 56.7%
+    Kickouts = 152021853; Dirty kickouts = 70089477; Transfers = 152022373
+    VC Hit count = 3754647
+
+  L1 cache cost (Icache $800) + (Dcache $800) = $1600
+  L2 cache cost = $100;  Memory cost = $75  Total cost = $1775

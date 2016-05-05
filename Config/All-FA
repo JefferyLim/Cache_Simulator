@@ -1,0 +1,9 @@
+L1_block_size		32
+L1_cache_size		8192
+L1_assoc			256
+
+L2_block_size		64
+L2_cache_size		32768
+L2_assoc			512
+
+mem_chunksize 		8

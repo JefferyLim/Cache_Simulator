@@ -1,0 +1,53 @@
+
+-------------------------------------------------------------------------
+      sjeng.All-small       Simulation Results
+-------------------------------------------------------------------------
+
+  Memory system: 
+    Dcache size = 4096 : ways = 1 : block size = 32 
+    Icache size = 4096 : ways = 1 : block size = 32 
+    L2-cache size = 16384 : ways = 1 : block size = 64 
+    Memory ready time = 50 : chunksize = 8 : chunktime = 15 
+
+  Execute time =    201831436;  Total refs = 5000000
+  Inst refs = 3163087;  Data refs = 1836913
+
+  Number of reference types:  [Percentage]
+    Reads  =       204709    [ 4.1%]
+    Writes =      1632204    [32.6%]
+    Inst.  =      3163087    [63.3%]
+    Total  =      5000000
+
+   Total cycles for activities:  [Percentage]
+    Reads  =      1163863    [ 0.6%]
+    Writes =    191417328    [94.8%]
+    Inst.  =      9250245    [ 4.6%]
+    Total  =    201831436
+
+  CPI = 63.8
+  Ideal: Exec. Time = 8163087; CPI =  2.6
+  Ideal mis-aligned: Exec. Time = 15436698; CPI =  4.9
+
+  Memory Level:  L1i
+    Hit Count = 5841714  Miss Count = 1957
+    Total Requests = 5843671
+    Hit Rate = 100.0%   Miss Rate =  0.0%
+    Kickouts = 1449; Dirty kickouts = 0; Transfers = 1585
+    VC Hit count = 372
+
+  Memory Level:  L1d
+    Hit Count = 5646657  Miss Count = 783283
+    Total Requests = 6429940
+    Hit Rate = 87.8%   Miss Rate = 12.2%
+    Kickouts = 771380; Dirty kickouts = 765745; Transfers = 771516
+    VC Hit count = 11767
+
+  Memory Level:  L2
+    Hit Count = 1150841  Miss Count = 388005
+    Total Requests = 1538846
+    Hit Rate = 74.8%   Miss Rate = 25.2%
+    Kickouts = 387038; Dirty kickouts = 382930; Transfers = 387302
+    VC Hit count = 703
+
+  L1 cache cost (Icache $100) + (Dcache $100) = $200
+  L2 cache cost = $50;  Memory cost = $75  Total cost = $325

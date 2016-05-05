@@ -1,0 +1,53 @@
+
+-------------------------------------------------------------------------
+      tr4.All-2way       Simulation Results
+-------------------------------------------------------------------------
+
+  Memory system: 
+    Dcache size = 8192 : ways = 2 : block size = 32 
+    Icache size = 8192 : ways = 2 : block size = 32 
+    L2-cache size = 32768 : ways = 2 : block size = 64 
+    Memory ready time = 50 : chunksize = 8 : chunktime = 15 
+
+  Execute time =    4565;  Total refs = 100
+  Inst refs = 79;  Data refs = 21
+
+  Number of reference types:  [Percentage]
+    Reads  =            7    [ 7.0%]
+    Writes =           14    [14.0%]
+    Inst.  =           79    [79.0%]
+    Total  =          100
+
+   Total cycles for activities:  [Percentage]
+    Reads  =          919    [20.1%]
+    Writes =         1590    [34.8%]
+    Inst.  =         2056    [45.0%]
+    Total  =         4565
+
+  CPI = 57.8
+  Ideal: Exec. Time = 179; CPI =  2.3
+  Ideal mis-aligned: Exec. Time = 259; CPI =  3.3
+
+  Memory Level:  L1i
+    Hit Count = 127  Miss Count = 11
+    Total Requests = 138
+    Hit Rate = 92.0%   Miss Rate =  8.0%
+    Kickouts = 0; Dirty kickouts = 0; Transfers = 11
+    VC Hit count = 0
+
+  Memory Level:  L1d
+    Hit Count = 29  Miss Count = 13
+    Total Requests = 42
+    Hit Rate = 69.0%   Miss Rate = 31.0%
+    Kickouts = 0; Dirty kickouts = 0; Transfers = 13
+    VC Hit count = 0
+
+  Memory Level:  L2
+    Hit Count = 5  Miss Count = 19
+    Total Requests = 24
+    Hit Rate = 20.8%   Miss Rate = 79.2%
+    Kickouts = 0; Dirty kickouts = 0; Transfers = 19
+    VC Hit count = 0
+
+  L1 cache cost (Icache $400) + (Dcache $400) = $800
+  L2 cache cost = $200;  Memory cost = $75  Total cost = $1075

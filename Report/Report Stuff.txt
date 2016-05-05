@@ -1,0 +1,21 @@
+Results
+
+Libquantum and bzip2 demonstrate very similar CPIs across all configuration. This is most likely due to how the trace files are written. Common CPI means that the number of instructions ran are not as complex and may continuously use the same data references.
+
+Discussions
+
+The best way to discuss the best memory configuration depends entirely on CPI and cost. Execution time is very flawed as it depends a lot on how many references the trace files had. 
+
+One can have a cache system where everything is fully associative, but this does not guarantee the best performance as seen on libquantum and bzip2 since the L1 Small configuration's CPI is almost exact to the fully associative on those traces. 
+
+Overall, however, fully associative caches will simply be more efficient than lower set associative configurations due to the fact that referencing the same index will cause the cache to miss multiple times. This is fixed by the addition of the victim cache and makes direct mapped a more viable option. 
+
+Cost of the system is an important consideration. A more expensive system such as fully associative may not be an efficient system at all, where having spending a lot of money may not come out with the best results. Determining the average CPI and average CPI per dollar will give a general idea of how efficient each configuration is.
+
+As seen in the graph below, all fully associative and all small represent the extreme cases. These values are not ideal and so we wish to find something in between. L1 8way, All 2way, and All 4way have low CPI before All FA. When comparing the averages, All 4way's average CPI is only better than L1 8way by .5 CPI, but costs 400 dollars more. That money could be spend better elsewhere in the system, so All 4way is not more efficient than the others. L1 8way and All 2way would be the remaining configurations. L1 8way is an interesting configuration due to the 8 way set associativity for the L1 cache. This means that the miss amounts will be reduced in the L1 cache, hopefully decreasing total cycle times of accessing main memory.
+
+Conclusions:
+
+	Overall, deciding the best performance configurations determines entirely on the amount of money one wishes to spend. Even if using fully associative configurations, the effectiveness of the cache will also depend on the trace file, as shown by some of the trace simulation results. There is no best cache configuration based on price and efficiency as it all depends on the traces that are being run. 
+	There are a lot more trends that could be confirmed by playing with the associativity of the L2 cache and seeing how the chunksize would affect the other cache configurations. The amount of money it costs to upgrade the associativity could be used elsewhere, such as increasing the chunksize of main memory.
+

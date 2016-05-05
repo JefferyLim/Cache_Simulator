@@ -1,0 +1,53 @@
+
+-------------------------------------------------------------------------
+      omnetpp.L1-small-4way       Simulation Results
+-------------------------------------------------------------------------
+
+  Memory system: 
+    Dcache size = 4096 : ways = 4 : block size = 32 
+    Icache size = 4096 : ways = 4 : block size = 32 
+    L2-cache size = 32768 : ways = 1 : block size = 64 
+    Memory ready time = 50 : chunksize = 8 : chunktime = 15 
+
+  Execute time =    135840464412;  Total refs = 10000000913
+  Inst refs = 6748282688;  Data refs = 3251718225
+
+  Number of reference types:  [Percentage]
+    Reads  =  2012001894    [20.1%]
+    Writes =  1239716331    [12.4%]
+    Inst.  =  6748282688    [67.5%]
+    Total  = 10000000913
+ 
+  Total cycles for activities:  [Percentage]
+    Reads  = 54385528500    [40.0%]
+    Writes = 10394812197    [ 7.7%]
+    Inst.  = 71060123715    [52.3%]
+    Total  =135840464412
+ 
+  CPI = 20.1
+  Ideal: Exec. Time = 16748283601; CPI =  2.5
+  Ideal mis-aligned: Exec. Time = 24145878430; CPI =  3.6
+
+  Memory Level:  L1i
+    Hit Count = 10796713031  Miss Count = 662449200
+    Total Requests = 11459162231
+    Hit Rate = 94.2%   Miss Rate =  5.8%
+    Kickouts = 625743756; Dirty kickouts = 0; Transfers = 625743892
+    VC Hit count = 36705308
+
+  Memory Level:  L1d
+    Hit Count = 5576768211  Miss Count = 361665300
+    Total Requests = 5938433511
+    Hit Rate = 93.9%   Miss Rate = 6.1%
+    Kickouts = 335244705; Dirty kickouts = 127146836; Transfers = 335244841
+    VC Hit count = 26420459
+
+  Memory Level:  L2
+    Hit Count = 718947978  Miss Count = 369187591
+    Total Requests = 1088135569
+    Hit Rate = 66.1%   Miss Rate = 33.9%
+    Kickouts = 354196103; Dirty kickouts = 70863375; Transfers = 354196623
+    VC Hit count = 14990968
+
+  L1 cache cost (Icache $300) + (Dcache $300) = $600
+  L2 cache cost = $100;  Memory cost = $75  Total cost = $775
